@@ -1,0 +1,546 @@
+/* Estilo Geral */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: #000;
+   height: 100vh;
+}
+
+.interface {
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.flex {
+   display: flex;
+}
+
+.btn-contato button {
+   padding: 10px 40px;
+   font-size: 18px;
+   font-weight: 600;
+   background-color: #ff5656;
+   border: 0;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: .2s;
+}
+
+h2.titulo {
+   color: #fff;
+   font-size: 38px;
+   text-align: center;
+   margin-bottom: 100px;
+
+}
+
+h2.titulo span {
+   color: #ff5656;
+}
+
+button:hover {
+   box-shadow: 0px 0px 8px #ff5656;
+   transform: scale(1.05);
+}
+
+
+
+
+/* Estilo do Cabeçalho */
+header {
+   padding: 40px 4%;
+}
+
+header>.interface {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header a {
+
+   color: #383838;
+   text-decoration: none;
+   display: inline-block;
+   transition: .2s;
+}
+
+header a:hover {
+
+   color: #ff5656;
+   transform: scale(1.20);
+}
+
+header nav ul {
+
+   list-style-type: none;
+}
+
+header nav ul li {
+   display: inline-block;
+   padding: 0 40px;
+}
+
+
+/* Estilo Topo */
+section.topo-do-site {
+   padding: 30px 4%;
+}
+
+section.topo-do-site .flex {
+   align-items: center;
+   justify-content: center;
+   gap: 90px;
+}
+
+.topo-do-site h1 {
+
+   color: #ff5656;
+   font-size: 42px;
+   line-height: 50px;
+   margin: 40px 0px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span {
+
+   color: hwb(0 35% 0%);
+   font-size: 75px;
+   gap: 32;
+   text-decoration: underline;
+}
+
+.topo-do-site p {
+   color: #fff;
+   font-size: 20px;
+}
+
+.topo-do-site .btn-contato {
+   margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+   position: relative;
+   animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+   0% {
+      top: 0;
+   }
+
+   100% {
+      top: 30px;
+   }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+   padding: 40px 4%;
+}
+
+section.especialidades .flex {
+   gap: 60px;
+}
+
+.especialidades .especialidades-box {
+   color: #fff;
+   padding: 40px;
+   margin-top: 45px;
+   border-radius: 20px;
+   transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 10px #ff5656a6;
+
+}
+
+.especialidades .especialidades-box i {
+   font-size: 80px;
+   color: #ff5656;
+}
+
+.especialidades .especialidades-box p {
+   font-size: 24px;
+   color: #ffffff;
+   margin: 26px 0;
+}
+
+/* ESTILO DO SOBRE */
+section.sobre {
+   padding: 40px 4%;
+
+}
+
+.sobre .txt-sobre {
+   color: #ffffff;
+}
+
+section.sobre .flex {
+   align-items: center;
+   gap: 60px;
+}
+
+.sobre .txt-sobre h2 {
+   font-size: 40px;
+   line-height: 40px;
+   margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+   color: #ff5656;
+   display: block;
+}
+
+.sobre,
+.txt-sobre p {
+   margin: 20px 0;
+   text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: 0;
+   background-color: #ff5656;
+   font-size: 40px;
+   cursor: pointer;
+   margin: 0 7px;
+   transition: .2s;
+}
+
+/* ESTILO DO PORTFOLIO */
+section.portfolio {
+   padding: 80px 4%;
+   box-shadow: 0 0 40px 10px #ffffff2c;
+}
+
+section.portfolio .flex {
+   justify-content: space-around;
+}
+
+.img-port {
+   width: 360px;
+   height: 460px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 40px;
+   position: relative;
+   transition: opacity 0.2s ease-in-out;
+}
+
+
+/* Ajuste específico para a imagem hamburguer.jpg */
+.img-hamburguer {
+   width: 360px;
+   /* Mesmo tamanho das outras */
+   height: 460px;
+   object-fit: cover;
+   /* Ajusta a imagem sem distorcer */
+   border-radius: 40px;
+   /* Mantém os cantos arredondados */
+
+}
+
+.item-port:hover {
+   transform: scale(1.2);
+   transition: .2s;
+   cursor: pointer;
+}
+
+.img-port p {
+   font-size: 40px;
+}
+
+/* Formulario */
+section.formulario {
+   padding: 80px 4%;
+
+}
+
+form {
+   max-width: 500px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 40px;
+}
+
+form input,
+form textarea {
+   width: 100%;
+   background-color: #383838;
+   border: 0;
+   outline: 0;
+   padding: 20px 15px;
+   border-radius: 15px;
+   color: #fff;
+   font-size: 18px;
+}
+
+
+form textarea {
+
+   resize: none;
+   max-height: 200px;
+}
+
+form .btn-enviar {
+   margin-top: 20px;
+   text-align: center;
+}
+
+form .btn-enviar button {
+   width: 150px;
+   height: 50px;
+   border-radius: 50px;
+   border: 0;
+   background-color: #ff5656;
+   font-size: 23px;
+   cursor: pointer;
+   margin: 0 7px;
+   transition: .2s;
+}
+
+form .btn-enviar button:hover {
+   transition: .2s;
+   box-shadow: 0px 0px 8px #ff5656;
+   transform: scale(1.05);
+
+}
+
+.logo-footer {
+   margin: 0 auto;
+   text-align: center;
+}
+
+.logo-footer:hover {
+   border: 0;
+}
+
+/* topo */
+.menu-desktop,
+.btn-contato {
+   display: none;
+}
+
+/* Scroll da tela nos clicks */
+
+html {
+   scroll-behavior: smooth;
+}
+
+/* Ajuste da seção Portfolio */
+.portfolio .flex {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.item-port {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.img-port {
+   width: 360px;
+   height: 460px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 40px;
+}
+
+.img-txt {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #fff;
+   font-weight: bold;
+}
+
+/* Obrigado.hmtl */
+.agradecimento-container {
+   text-align: center;
+   margin-top: 100px;
+   color: #fff;
+}
+
+.agradecimento-container h1 {
+   font-size: 36px;
+   margin-bottom: 10px;
+   color: #ff5656;
+}
+
+.agradecimento-container p {
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+.btn-voltar {
+   padding: 10px 30px;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #ff5656;
+   color: white;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.btn-voltar:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 0px 10px #ff5656;
+}
+
+.btn-whats button {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border: 0;
+   background-color: #ff5656;
+   font-size: 40px;
+   cursor: pointer;
+   margin: 0 7px;
+   transition: .2s;
+}
+
+.txt-whats {
+   color: #fff;
+   font-size: 24px;
+}
+
+.whats {
+   display: flex;
+   flex-direction: column;
+   /* Organiza os itens na vertical */
+   align-items: center;
+   /* Centraliza horizontalmente */
+   justify-content: center;
+   /* Mantém alinhado corretamente */
+   text-align: center;
+   margin-top: 20px;
+   /* Espaço entre o botão "Enviar" e a div do WhatsApp */
+}
+
+.txt-whats span {
+   color: #ff5656;
+
+}
+
+.line-footer p {
+   font-size: 24px;
+   color: #fff;
+   text-align: center;
+}
+
+.line-footer p span {
+   color: #ff5656;
+}
+
+footer {
+   border-top: 2px solid #ff56563a;
+   /* Cor e espessura da linha */
+   padding-top: 20px;
+   /* Espaço para afastar o conteúdo do footer da linha */
+}
+
+/* Responsividade */
+@media screen and (max-width:1020px){
+   .menu-desktop {
+      display: none;
+
+   }
+
+   /*gerais */
+   .flex {
+      flex-direction: column-reverse;
+   }
+
+   .topo-do-site .flex {
+      flex-direction: column-reverse;
+   }
+
+   /* Cabecalho */
+   .menu-desktop,
+   .btn-contato {
+      display: none;
+   }
+
+   .topo-do-site h1 {
+      padding: 10px 8%;
+   }
+
+   .topo-do-site .img-topo-site img {
+      width: 100%;
+      height: 70%;
+      gap: 20px
+   }
+
+   .interface .logo {
+      padding: px 20%;
+      gap: 0px;
+   }
+
+   /* especialidades */
+   section.especialidades {
+      padding: 40px 8%;
+   }
+
+   h2.titulo {
+      font-size: 30px;
+      line-height: 30px;
+   }
+
+   /* sobre */
+   .img-sobre {
+      display: none;
+   }
+
+   .btn-social {
+      text-align: center;
+
+   }
+
+   .txt-topo-do-site {
+      padding: 32px 8%;
+   }
+
+   .txtsobre {
+      letter-spacing: 1%;
+      font-size: 12px;
+   }
+
+   /* portfolio */
+
+
+   /* fale comigo */
+
+   /* footer */
+   .logo-footer img {
+      width: 120px;
+      padding: 0%;
+      align-items: center;
+   }
+
+   footer {
+      border-top: 2px solid #ff56563a;
+      /* Cor e espessura da linha */
+      padding-top: 20px;
+      /* Espaço para afastar o conteúdo do footer da linha */
+   }
+
+
+}
