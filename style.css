@@ -74,6 +74,7 @@ header a:hover {
 
    color: #ff5656;
    transform: scale(1.20);
+   
 }
 
 header nav ul {
@@ -85,6 +86,7 @@ header nav ul li {
    display: inline-block;
    padding: 0 40px;
 }
+
 
 
 /* Estilo Topo */
@@ -328,10 +330,6 @@ form .btn-enviar button:hover {
 }
 
 /* topo */
-.menu-desktop,
-.btn-contato {
-   display: none;
-}
 
 /* Scroll da tela nos clicks */
 
@@ -440,6 +438,12 @@ html {
 
 }
 
+.txt-whats p a{
+   text-decoration: none;
+
+
+}
+
 .line-footer p {
    font-size: 24px;
    color: #fff;
@@ -493,6 +497,7 @@ footer {
       padding: px 20%;
       gap: 0px;
    }
+
 
    /* especialidades */
    section.especialidades {
